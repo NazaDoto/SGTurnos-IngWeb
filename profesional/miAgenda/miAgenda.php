@@ -75,7 +75,7 @@ session_start();
         <div class="col-lg-3 mt-5">
             <div class="card">
                 <div class="card-header text-center">
-                    <h3 class="titulo">Gestionar Especialidades</h3>
+                    <h3 class="titulo">Mi Agenda</h3>
                 </div>
                 <div class="card-body">
                     <form method="post" id="frm">
@@ -101,7 +101,7 @@ session_start();
         
     </div>
     <div class="table-responsive mt-5 col-lg-6  align-items-center">
-            <table class="table table-hover table-bordered table-responsive text-center" >
+            <table  class="table table-hover table-striped table-responsive{md} text-center" >
                 <thead class="thead-light">
                     <tr class="bg-light-gray">
                         <th class="text-uppercase">Hora
@@ -113,15 +113,16 @@ session_start();
                         <th class="text-uppercase">Viernes</th>
                     </tr>
                 </thead>
-                <tbody class="fondo-tabla" style="color: white; font-weight:bold;text-shadow: 1px 1px 2px black;" >
-                    <tr>
+                <tbody class="fondo-tabla " style="color: white; font-weight:bold;text-shadow: 1px 1px 2px black; " >
+                    <tr >
 
                         <td class="align-middle fondo-hora">08:00</td>
                         <td>
                             <!-- Lunes -->
-                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">Dance</span>
+                            <div class="font-size15 text-light-gray">Ivana Wong</div>
+                            <button type ="button" class='btn-success boton-tamaño'>Ver</button>
 
-                            <div class="font-size13 text-light-gray">Ivana Wong</div>
+                            
                         </td>
                         <td>
                             <!-- Martes -->
@@ -144,7 +145,7 @@ session_start();
                         </td>
                         <td>
                             <!-- Viernes -->
-                            <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Art</span>
+                            <span  class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Art</span>
 
                             <div class="font-size13 text-light-gray">Kate Alley</div>
                         </td>

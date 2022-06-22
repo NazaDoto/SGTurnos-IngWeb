@@ -1,4 +1,6 @@
-
+.boton-tamaño{
+    font-size:small;
+}
 .fondo-hora{
     background-color: rgba(50,50,200,0.5);
 }

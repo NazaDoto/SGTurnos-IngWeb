@@ -50,9 +50,9 @@ session_start();
                     <img src="../recursos/iconoNav.png" class="d-none d-sm-block" alt="" loading="lazy" />
                 </a>
                 <!-- Left links -->
-                <a class="nav-link" href="#">Gestionar profesionales</a>
-                <a class="nav-link" href="especialidades/gestionarEspecialidades.php">Gestionar especialidades</a>
-                <a class="nav-link" href="#">Generar reportes</a>
+                <a class="nav-link" href="#">Gestionar Profesionales</a>
+                <a class="nav-link" href="especialidades/gestionarEspecialidades.php">Gestionar Especialidades</a>
+                <a class="nav-link" href="#">Generar Reportes</a>
                 
                 <!-- Left links -->
             </div>
