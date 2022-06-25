@@ -46,8 +46,8 @@ session_start();
                     <img src="../../recursos/iconoNav.png" class="d-none d-sm-block" alt="" loading="lazy" />
                 </a>
                 <!-- Left links -->
-                <a class="nav-link" href="../medicos/gestionarMedicos.php">Gestionar Profesionales</a>
-                <a class="nav-link" style="color:blue;" href="">Gestionar Especialidades</a>
+                <a class="nav-link" href="#">Gestionar Profesionales</a>
+                <a class="nav-link" style="color:blue;" href="../especialidades/gestionarEspecialidades.php">Gestionar Especialidades</a>
                 <a class="nav-link" href="#">Generar Reportes</a>
 
                 <!-- Left links -->
@@ -67,7 +67,7 @@ session_start();
         <div class="col-lg-3 mt-5">
             <div class="card">
                 <div class="card-header text-center">
-                    <h3 class="titulo">Gestionar Especialidades</h3>
+                    <h3 class="titulo">Gestionar Medicos</h3>
                 </div>
                 <div class="card-body">
                     <form method="post" id="frm">

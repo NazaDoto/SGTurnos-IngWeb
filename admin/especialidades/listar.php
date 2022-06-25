@@ -12,6 +12,7 @@ if ($data != "") {
 $resultado = $consulta->fetchAll(PDO::FETCH_ASSOC);
 foreach ($resultado as $data) {
     echo "<tr>
+            
             <td>" . $data['codEspecialidad'] . "</td>
             <td>" . $data['nomEspecialidad'] . "</td>
             <td>" . $data['fechaCarga'] . "</td>

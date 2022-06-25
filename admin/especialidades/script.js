@@ -18,7 +18,7 @@ registrar.addEventListener("click", () => {
             Swal.fire({
                 icon: 'success',
                 title: 'Registrado',
-                showConfirmButton: false,
+                showConfirmButton: true,
                 timer: 1500
             })
             frm.reset();
@@ -32,7 +32,7 @@ registrar.addEventListener("click", () => {
                 timer: 1500
             })
             registrar.value = "Registrar";
-            idp.value = "";
+            ide.value = "";
             listarEspecialidades();
             frm.reset();
         }
@@ -43,7 +43,7 @@ registrar.addEventListener("click", () => {
 function eliminar(id) {
     Swal.fire({
         title: 'Eliminar especialidad?',
-        text: "Confime si desea eliminar el registro de la especialidad!",
+        text: "Si desea eliminar la especialidad, se borraran los registros de los medidos vinculados con esta especialidad.",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
@@ -75,8 +75,6 @@ function eliminar(id) {
     })  
 
 }
-
-
 
 function editar(id) {
     fetch("editar.php", {

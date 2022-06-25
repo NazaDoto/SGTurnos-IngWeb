@@ -50,7 +50,7 @@ session_start();
                     <img src="../recursos/iconoNav.png" class="d-none d-sm-block" alt="" loading="lazy" />
                 </a>
                 <!-- Left links -->
-                <a class="nav-link" href="#">Gestionar Profesionales</a>
+                <a class="nav-link" href="medicos/gestionarMedicos.php">Gestionar Profesionales</a>
                 <a class="nav-link" href="especialidades/gestionarEspecialidades.php">Gestionar Especialidades</a>
                 <a class="nav-link" href="#">Generar Reportes</a>
                 
@@ -72,6 +72,13 @@ session_start();
     </nav>
     <!-- Navbar -->
 
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 style="color:#fff">Aministrador!</h1>
+            </div>
+        </div>
+    </div>
     
     
 </body>
