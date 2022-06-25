@@ -1,6 +1,6 @@
 
-listarProductos();
-function listarProductos(busqueda) {
+listarEspecialidades();
+function listarEspecialidades(busqueda) {
     fetch("listar.php", {
         method: "POST",
         body: busqueda
@@ -22,7 +22,7 @@ registrar.addEventListener("click", () => {
                 timer: 1500
             })
             frm.reset();
-            listarProductos();
+            listarEspecialidades();
         } else {
             debugger
             Swal.fire({
@@ -33,7 +33,7 @@ registrar.addEventListener("click", () => {
             })
             registrar.value = "Registrar";
             idp.value = "";
-            listarProductos();
+            listarEspecialidades();
             frm.reset();
         }
     })
@@ -60,7 +60,7 @@ function eliminar(id) {
                 if (response = "ok") {
                     console.log(response);
                     document.getElementById('frm').reset();
-                    listarProductos();
+                    listarEspecialidades();
                     Swal.fire({
                         icon: 'success',
                         title: 'Especialidad borrada',
@@ -92,8 +92,8 @@ function editar(id) {
 buscar.addEventListener("keyup", () => {
     const valor = buscar.value;
     if (valor == "") {
-        listarProductos();
+        listarEspecialidades();
     } else {
-        listarProductos(valor);
+        listarEspecialidades(valor);
     }
 });

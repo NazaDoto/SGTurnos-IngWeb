@@ -7,7 +7,7 @@ if (isset($_POST)) {
     $fecha = date('Y-m-d');
     
     require "../../conf/db.php";
-    if (empty($_POST['idE'])){
+    if (empty($_POST['ide'])){
         $query = $conexion->prepare("INSERT INTO especialidades (codEspecialidad, nomEspecialidad, fechaCarga) VALUES (:cod, :nomb, :fec)");
         $query->bindParam(":cod", $codigo);
         $query->bindParam(":nomb", $nombre);
@@ -16,7 +16,7 @@ if (isset($_POST)) {
         $conexion = null;
         echo "ok";
     }else{
-        $id = $_POST['idE'];
+        $id = $_POST['ide'];
         $query = $conexion->prepare("UPDATE especialidades SET codEspecialidad = :cod, nomEspecialidad = :nomb, fechaCarga =:fec WHERE idE = :id");
         $query->bindParam(":cod", $codigo);
         $query->bindParam(":nomb", $nombre);
