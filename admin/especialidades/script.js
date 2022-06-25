@@ -72,7 +72,7 @@ function eliminar(id) {
             })
 
         }
-    })
+    })  
 
 }
 
@@ -83,10 +83,9 @@ function editar(id) {
         method: "POST",
         body: id
     }).then(response => response.json()).then(response => {
-        idp.value = response.id;
-        codigo.value = response.cod;
-        nombre.value = response.nombre;
-
+        ide.value = response.id;
+        codigo.value = response.codEspecialidad;
+        nombre.value = response.nomEspecialidad;
         registrar.value = "Actualizar"
     })
 }

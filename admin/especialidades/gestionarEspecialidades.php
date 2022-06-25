@@ -1,6 +1,8 @@
 <?php
+
 include('../../conf/db.php');
 session_start();
+
 ?>
 <!DOCTYPE html>
 <html id="htmlAdmin" lang="en">
@@ -24,11 +26,11 @@ session_start();
     <!-- Navbar -->
     <?php
                         
-                         if (isset($_SESSION["conexionAceptadaAdmin"])) {
+                        if (isset($_SESSION["conexionAceptadaAdmin"])) {
                             $conexionAceptadaAdmin = $_SESSION["conexionAceptadaAdmin"];
                         }     else { 
                             header("location: ../../Validation/sinSesion.php"); 
-                           }   
+                        }   
                         
                         ?>
     <nav style="background-color: rgba(165, 250, 174, 0.7);" class="navbar navbar-expand-lg">
@@ -73,7 +75,7 @@ session_start();
                     <form method="post" id="frm">
                         <div class="mb-3">
                             <label class="form-label">Código</label>
-                            <input type="hidden" name="idp" id="idp" value="">
+                            <input type="hidden" name="ide" id="ide" value=""> 
                             <input type="text" class="form-control" id="codigo" name="codigo" placeholder="Código">
                         </div>
 

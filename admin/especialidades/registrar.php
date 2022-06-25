@@ -4,11 +4,11 @@
 if (isset($_POST)) {
     $codigo = $_POST['codigo'];
     $nombre = $_POST['nombre'];
-    $fecha = date('d-m-Y');
+    $fecha = date('Y-m-d');
     
     require "../../conf/db.php";
-    if (empty($_POST['idp'])){
-        $query = $conexion->prepare("INSERT INTO especialidades (cod, nombre, fecha) VALUES (:cod, :nomb, :fec)");
+    if (empty($_POST['idE'])){
+        $query = $conexion->prepare("INSERT INTO especialidades (codEspecialidad, nomEspecialidad, fechaCarga) VALUES (:cod, :nomb, :fec)");
         $query->bindParam(":cod", $codigo);
         $query->bindParam(":nomb", $nombre);
         $query->bindParam(":fec", $fecha);
@@ -16,8 +16,8 @@ if (isset($_POST)) {
         $conexion = null;
         echo "ok";
     }else{
-        $id = $_POST['idp'];
-        $query = $conexion->prepare("UPDATE especialidades SET cod = :cod, nombre = :nomb, fecha =:fec WHERE id = :id");
+        $id = $_POST['idE'];
+        $query = $conexion->prepare("UPDATE especialidades SET codEspecialidad = :cod, nomEspecialidad = :nomb, fechaCarga =:fec WHERE idE = :id");
         $query->bindParam(":cod", $codigo);
         $query->bindParam(":nomb", $nombre);
         $query->bindParam(":fec", $fecha);

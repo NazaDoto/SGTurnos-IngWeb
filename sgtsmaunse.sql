@@ -15,6 +15,7 @@ insert into usuarios(idU,apeNom,usuario,contraseña,idCargo) values
 (110,'Navarrete Nazareno','admin','admin',1),
 (150,'Gonzales Guillermo','guille','12345',2);
 insert into usuarios(id,apeyNom,usuario,contraseña,idCargo) values (151,'Valentini Rodolfo','rody','1234',3);
+insert into usuarios(idU,apeNom,usuario,contraseña,idCargo) values (153,'Palavecino Franco','pala','pala123',3);
 (152,'Herlan Bruno','android','123456',2);
 
 insert into roles(idC,descripcion) values (3, 'medico');
